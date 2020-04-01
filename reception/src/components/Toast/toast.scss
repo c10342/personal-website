@@ -1,0 +1,39 @@
+@import "../../assets/css/style.scss";
+
+.toast-component{
+  position: fixed;
+  top: px2rem(30);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: px2rem(13);
+  &-success{
+    border:1px solid #b7eb8f;
+    background-color: #f6ffed;
+  }
+  &-info{
+    border:1px solid #91d5ff;
+    background-color: #e6f7ff;
+  }
+  &-error{
+    border:1px solid #ffccc7;
+    background-color: #fff2f0;
+  }
+  &-item{
+    transition: all .4s;
+    animation: amFadeIn 1s forwards;
+    line-height: px2rem(20);
+    padding: px2rem(8) px2rem(10);
+    width: px2rem(300);
+    margin-top: px2rem(10);
+  }
+}
+
+@keyframes amFadeIn {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}

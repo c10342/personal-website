@@ -1,0 +1,65 @@
+@import "../../assets/css/style.scss";
+
+  .blog-card-item{
+    width: 100%;
+    margin-top: px2rem(40);
+    cursor: pointer;
+    border: 1px solid rgba(0, 36, 100, 0.3);
+    border-radius: px2rem(6);
+    padding: px2rem(18);
+    transition: all .3s;
+    @include flex-row();
+    &:hover{
+      @include hover();
+    }
+    .blog-right{
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .title{
+      word-break: break-all;
+      color: #3d3d3d;
+      font-size: px2rem(20);
+      font-weight: bold;
+      margin-bottom: px2rem(12);
+    }
+    .content{
+      font-size: px2rem(15);
+      line-height: px2rem(25);
+      margin-bottom: px2rem(12);
+
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3; //需要控制的文本行数
+      overflow: hidden;
+    }
+    .time{
+      font-size: px2rem(13);
+      color: #666666;
+    }
+  }
+
+
+.blog-card-item-list{
+  width: 100%;
+  @include flex-row();
+  .blog-left{
+    flex: 3;
+    margin-right: px2rem(40);
+  }
+  .blog-right{
+    flex: 1;
+    height: inherit;
+  }
+}
+
+.blog-card-item-grid{
+  width: 40%;
+  @include flex-col();
+  flex-direction: column-reverse;
+  .blog-right{
+    height: px2rem(150);
+    margin-bottom: px2rem(20);
+  }
+}

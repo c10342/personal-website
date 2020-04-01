@@ -1,0 +1,20 @@
+@import "../../assets/css/style.scss";
+
+.text-area-component{
+  border: 1px solid #dcdfe7;
+  outline: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #ffffff;
+  transition: all .3s;
+  height: px2rem(100);
+  border-radius: px2rem(5);
+  width: 100%;
+  padding: px2rem(10);
+  resize: none;
+  font-size: px2rem(16);
+  color: #666666;
+  &:hover,&:focus{
+    border-color: #999999;
+  }
+}

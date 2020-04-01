@@ -1,0 +1,19 @@
+
+
+@import "../../assets/css/style.scss";
+
+.sort-card{
+  width: px2rem(387);
+  height: px2rem(120);
+  border-radius: px2rem(12);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  transition: all .3s;
+  &:hover{
+    @include hover();
+  }
+}

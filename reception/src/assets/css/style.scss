@@ -1,0 +1,54 @@
+
+@import './reset.scss';
+@import './base.scss';
+
+@function px2rem($px){
+    @return $px/$rootFontSize + rem;
+}
+
+$rootFontSize:1280/50;
+
+$mainPadding:px2rem(100);
+
+@mixin flex-row(){
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-col(){
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center(){
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-left(){
+    justify-content: flex-start;
+}
+
+@mixin flex-right(){
+    justify-content: flex-end;
+}
+
+@mixin under-line(){
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: #0170FE;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin hover{
+    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
+    transform: translateY(-5px);
+}
+
+
+.mt-20{
+    margin-top: px2rem(20);
+}

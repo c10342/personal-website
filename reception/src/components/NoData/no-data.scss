@@ -1,0 +1,11 @@
+@import "../../assets/css/style.scss";
+
+
+.no-data{
+  text-align: center;
+  &-tip{
+    margin-top: px2rem(20);
+    font-size: px2rem(18);
+    color: #666666;
+  }
+}

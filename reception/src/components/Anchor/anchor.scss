@@ -1,0 +1,18 @@
+@import "../../assets/css/style.scss";
+
+$h:px2rem(70);
+
+.anchor{
+  width: $h;
+  background-color: white;
+  height: $h;
+  line-height: $h;
+  font-size: px2rem(12);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: px2rem(10);
+  box-shadow: rgba(0, 36, 100, 0.3) 0 0 30px 5px;
+  text-align: center;
+  cursor: pointer;
+}

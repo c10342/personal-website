@@ -1,0 +1,39 @@
+@import "../../assets/css/style.scss";
+
+.work-card{
+  margin-top: px2rem(40);
+  border: 1px solid rgba(0, 36, 100, 0.3);
+  padding: px2rem(20);
+  cursor: pointer;
+  transition: all .3s;
+  border-radius: px2rem(10);
+  &:hover{
+    @include hover();
+  }
+  &-image{
+    height: px2rem(500);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-describe{
+    margin-top: px2rem(20);
+  }
+  &-title{
+    font-size: px2rem(22);
+    font-weight: bold;
+    margin-bottom: px2rem(12);
+  }
+  &-abstract{
+    font-size: px2rem(18);
+    margin-bottom: px2rem(10);
+    color: #6a737d;
+  }
+  &-function{
+    list-style: disc;
+    >li{
+      line-height: px2rem(30);
+      margin-left: px2rem(14);
+    }
+  }
+}

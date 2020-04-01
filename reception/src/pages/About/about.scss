@@ -1,0 +1,56 @@
+@import "../../assets/css/style.scss";
+
+.about{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  @include flex-row();
+  @include flex-center();
+  .about-box{
+    border-radius: px2rem(5);
+    height: px2rem(400);
+    width: px2rem(800);
+    @include flex-row();
+    .info{
+      width: px2rem(300);
+      height: 100%;
+      @include flex-col();
+      justify-content: center;
+      .info-item-alis{
+        margin-top: px2rem(-50);
+        .first{
+          border: 7px solid #00a78e;
+          padding: 0 px2rem(14);
+          font-size: px2rem(22);
+          font-weight: bold;
+        }
+        .other{
+          margin-left: px2rem(10);
+          font-size: px2rem(22);
+        }
+      }
+      .info-item{
+        @include flex-row();
+        line-height: px2rem(50);
+        .label{
+          font-weight: bold;
+          width: px2rem(100);
+          font-size: px2rem(16);
+        }
+        .msg{
+          font-size: px2rem(16);
+        }
+      }
+    }
+    .image{
+      width: px2rem(500);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

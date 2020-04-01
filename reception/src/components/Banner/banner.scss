@@ -1,0 +1,40 @@
+
+@import "../../assets/css/style.scss";
+
+.banner{
+  .image{
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: px2rem(400);
+}
+
+.swiper-button-prev,.swiper-button-next{
+  color: #DCDFE7;
+  width: px2rem(50);
+  height: px2rem(70);
+  &:after{
+    font-size: px2rem(60);
+    font-weight: bold;
+    transition: all .5s;
+  }
+  &:hover:after{
+    color: #007AFF;
+    transform: scale3d(0.5,0.5,0.5);
+  }
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+

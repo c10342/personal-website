@@ -1,0 +1,32 @@
+@import "../../assets/css/style.scss";
+
+.message-page{
+  margin-top: px2rem(40);
+  padding: 0 $mainPadding px2rem(40);
+  .send-message{
+    margin-top: px2rem(10);
+    @include flex-row();
+    justify-content: space-between;
+    align-items: center;
+    .max-length-tip{
+      color: #666666;
+      font-size: px2rem(15);
+    }
+    .icon{
+      cursor: pointer;
+      margin-right: px2rem(20);
+      font-size: px2rem(20);
+      &:hover{
+        color: red;
+      }
+    }
+  }
+  .load-more{
+    margin-top: px2rem(30);
+    line-height: px2rem(60);
+    background-color: #F4F4F4;
+    font-size: px2rem(18);
+    text-align: center;
+    cursor: pointer;
+  }
+}

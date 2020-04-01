@@ -1,0 +1,16 @@
+
+
+@import "../../assets/css/style.scss";
+
+.other-sort{
+  margin-top: px2rem(30);
+  .sort-card-list{
+    //margin-top: px2rem(30);
+    @include flex-row();
+    flex-wrap: wrap;
+    >div{
+      margin-top: px2rem(30);
+      margin-right: px2rem(50);
+    }
+  }
+}

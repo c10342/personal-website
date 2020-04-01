@@ -1,0 +1,29 @@
+@import "../../assets/css/style.scss";
+
+.msg-card{
+  margin-top: px2rem(20);
+  background-color: #F4F4F4;
+  min-height: px2rem(120);
+  padding: px2rem(10) px2rem(20);
+  border-radius: px2rem(6);
+  transition: all .3s;
+  @include flex-col();
+  &:hover{
+    @include hover();
+  }
+  &-content{
+    flex: 1;
+    line-height: px2rem(24);
+    font-size: px2rem(15);
+  }
+  &-item{
+    @include flex-row();
+    justify-content: space-between;
+    align-items: center;
+    margin-top: px2rem(10);
+    font-size: px2rem(14);
+  }
+  &-nickName{
+    font-size: px2rem(13);
+  }
+}

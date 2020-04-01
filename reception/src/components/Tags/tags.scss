@@ -1,0 +1,27 @@
+
+
+@import "../../assets/css/style.scss";
+
+.tags-list{
+  @include flex-row();
+  flex-wrap: wrap;
+  margin-top: px2rem(20);
+  >span{
+    font-size: px2rem(16);
+    box-sizing: content-box;
+    margin-right: px2rem(18);
+    height: px2rem(22);
+    line-height: px2rem(22);
+    border: 1px solid #3686CF;
+    padding: px2rem(3) px2rem(10);
+    border-radius: px2rem(14);
+    color: #3686CF;
+    margin-bottom: px2rem(18);
+    cursor: pointer;
+    &:hover{
+      color: white!important;
+      border-color: #3686CF!important;
+      background-color: #3686CF!important;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../assets/css/style.scss";
+
+.blog{
+  padding: 0 $mainPadding  px2rem(40);
+  .typesetting{
+    margin-top: px2rem(40);
+    .icon{
+      font-size: px2rem(20);
+      margin-right: px2rem(30);
+      cursor: pointer;
+    }
+    .active{
+      color: #007AFF;
+    }
+  }
+  .blog-list{
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../assets/css/style.scss";
+
+.header{
+  height: px2rem(80);
+  padding: 0 $mainPadding;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 3px 3px 6px 2px rgba(0, 36, 100, 0.3);
+  .icon{
+    font-size: px2rem(38);
+  }
+  .name{
+    font-size: px2rem(30);
+    margin-left: px2rem(20);
+  }
+
+  .item-list{
+    @include flex-row();
+    align-items: center;
+    >li{
+      font-size: px2rem(18);
+      padding: px2rem(15) px2rem(10);
+      margin: 0 px2rem(10);
+      cursor: pointer;
+      position: relative;
+      &.active:after{
+        @include under-line();
+      }
+      &:after{
+        @include under-line();
+        width: 0;
+      }
+      &:hover:after{
+        transition: width .3s;
+        @include under-line();
+      }
+    }
+  }
+}

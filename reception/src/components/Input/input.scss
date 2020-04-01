@@ -1,0 +1,19 @@
+@import "../../assets/css/style.scss";
+
+.input-component{
+  border: 1px solid #dcdfe7;
+  outline: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #ffffff;
+  transition: all .3s;
+  height: px2rem(34);
+  border-radius: px2rem(5);
+  width: px2rem(300);
+  padding: px2rem(8) px2rem(10);
+  font-size: px2rem(15);
+  color: #666666;
+  &:hover,&:focus{
+    border-color: #999999;
+  }
+}

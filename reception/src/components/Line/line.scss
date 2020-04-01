@@ -1,0 +1,18 @@
+@import "../../assets/css/style.scss";
+
+.line-box{
+  @include flex-row();
+  align-items: center;
+  .icon{
+    font-size: px2rem(24);
+  }
+  .label{
+    font-size: px2rem(20);
+    margin: 0 px2rem(20);
+  }
+  .line{
+    flex: 1;
+    height: 1px;
+    background-color: #dcdfe7;
+  }
+}

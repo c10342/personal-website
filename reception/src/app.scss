@@ -1,0 +1,23 @@
+@import "./assets/css/style.scss";
+
+#root{
+  min-height: 100%;
+  width: 100%;
+  @include flex-col();
+  .app-container{
+    flex: 1;
+    position: relative;
+    >div{
+      animation: steps 1s linear forwards;
+    }
+  }
+}
+
+@keyframes steps {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
