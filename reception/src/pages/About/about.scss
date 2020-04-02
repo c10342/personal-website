@@ -15,14 +15,14 @@
     width: px2rem(800);
     @include flex-row();
     .info{
-      width: px2rem(300);
+      width: px2rem(800);
       height: 100%;
       @include flex-col();
       justify-content: center;
       .info-item-alis{
         margin-top: px2rem(-50);
         .first{
-          border: 7px solid #00a78e;
+          border: 7px solid #d506e7;
           padding: 0 px2rem(14);
           font-size: px2rem(22);
           font-weight: bold;

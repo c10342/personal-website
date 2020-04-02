@@ -23,33 +23,23 @@ class About extends React.Component{
                 <div className={'about-box'}>
                     <div className={'info'}>
                         <div className={'info-item info-item-alis'}>
-                            <span className={'first'}>嗨</span>
-                            <span className={'other'}>起</span>
-                            <span className={'other'}>来</span>
+                            <span className={'first'}>TjSanshao</span>
                         </div>
                         <div className={'info-item'}>
-                            <span className={'label'}>姓名</span>
-                            <span className={'msg'}>林家富</span>
-                        </div>
-                        <div className={'info-item'}>
-                            <span className={'label'}>出生年月</span>
-                            <span className={'msg'}>1996-05</span>
-                        </div>
-                        <div className={'info-item'}>
-                            <span className={'label'}>毕业学校</span>
-                            <span className={'msg'}>广东海洋大学</span>
+                            <span className={'label'}>位置</span>
+                            <span className={'msg'}>可打4路</span>
                         </div>
                         <div className={'info-item'}>
                             <span className={'label'}>职业</span>
-                            <span className={'msg'}>前端工程师</span>
+                            <span className={'msg'}>枪炮师、ADC、医疗兵、狙击手、前端狗、后台狗...</span>
                         </div>
                         <div className={'info-item'}>
                             <span className={'label'}>所在地</span>
-                            <span className={'msg'}>广东省广州市</span>
+                            <span className={'msg'}>艾欧尼亚、阿拉德大陆、JavaScript、Java、Python</span>
                         </div>
                         <div className={'info-item'}>
-                            <span className={'label'}>爱好</span>
-                            <span className={'msg'}>兵乓球、羽毛球</span>
+                            <span className={'label'}>人生感悟</span>
+                            <span className={'msg'}>我曾踏足山巅，也曾到过低谷，二者都让我受益良多</span>
                         </div>
                     </div>
                     <div className={'image'} style={{"backgroundImage":`url("${aboutImage}")`}} />

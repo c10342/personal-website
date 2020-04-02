@@ -32,8 +32,8 @@ class Header extends React.Component{
         return (
             <div className='header'>
                 <div>
-                    <i className="icon iconfont icon-Smile"/>
-                    <span className='name'>嗨起来</span>
+                    <i className="icon iconfont icon-pen"/>
+                    <span className='name'>TjSanshao</span>
                 </div>
                 <div>
                     {this.renderItemList()}

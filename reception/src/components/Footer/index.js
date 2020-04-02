@@ -5,7 +5,7 @@ import React,{memo} from 'react';
 import './footer.scss';
 
 const Footer = ()=>{
-    return <div className={'footer'}>Designed and developed by 嗨起来</div>
+    return <div className={'footer'}>Inspired by TjSanshao</div>
 };
 
 export default memo(Footer);
