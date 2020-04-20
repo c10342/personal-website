@@ -9,7 +9,9 @@
     "axios": "^0.19.2",
     "marked": "^0.8.2",
     "node-sass": "^4.13.1",
+    "ora": "^4.0.3",
     "prop-types": "^15.7.2",
+    "qiniu": "^7.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
@@ -20,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pb": "npm run build && node upload/qiniu.js"
   },
   "eslintConfig": {
     "extends": "react-app"
