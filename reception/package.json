@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "marked": "^0.8.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "ora": "^4.0.3",
     "prop-types": "^15.7.2",
     "qiniu": "^7.3.0",
